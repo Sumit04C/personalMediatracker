@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Index Page</title>
+   </head>
+   <body>
+      <h3>List of Volumes</h3>
+
+      <a href="/add_data">ADD</a>
+      <br><br>
+
+      <table border="1">
+         <thead>
+            <tr>
+               <th>Id</th>
+               <th>Series Name</th>
+               <th>Volume Number</th>
+               <th>Volume Type</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for data in volumes %}
+            <tr>
+               <td>{{ data.id }}</td>
+               <td>{{ data.series_name }}</td>
+               <td>{{ data.volume_number }}</td>
+               <td>{{ data.volume_type }}</td>
+               <td>
+                  <a href="/delete/{{ data.id }}">Delete</a>
+               </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+
+      </table>
+   </body>
+</html>
