@@ -5,6 +5,8 @@ Project Setup:
 
 You will then see a statement saying 'Running on http://127.0.0.1:5000' 
 
+4. Once you click it, a new browswer tab will open for you to add book entries. 
+
 Note: This is a working first version of an ongoing project. 
 
 Tools Used:
